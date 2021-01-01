@@ -14,3 +14,9 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+.navbar {
+	padding: 1rem;
+}
+</style>

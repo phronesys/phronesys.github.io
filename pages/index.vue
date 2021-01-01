@@ -15,11 +15,19 @@
 				<nuxt-link to="/about" class="button--green">about</nuxt-link>
 			</h1>
 		</div>
+		<div class="container">
+			<logo></logo>
+		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+import Logo from '../components/Logo';
+export default {
+	components: {
+		Logo,
+	},
+};
 </script>
 
 <style>

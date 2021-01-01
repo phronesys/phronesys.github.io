@@ -1,5 +1,20 @@
 <template>
 	<div>
+		<div class="navbar-background">
+			<div class="bootstrap">
+				<nav class="navbar navbar-expand-lg navbar-light bg-black">
+					<div class="container">
+						<nuxt-link to="/" class="button--grey">home</nuxt-link>
+						<nuxt-link to="/projects" class="button--green"
+							>projects</nuxt-link
+						>
+						<nuxt-link to="/about" class="button--green"
+							>about</nuxt-link
+						>
+					</div>
+				</nav>
+			</div>
+		</div>
 		<Nuxt />
 	</div>
 </template>
@@ -30,6 +45,14 @@ html {
 *::after {
 	box-sizing: border-box;
 	margin: 0;
+}
+.bootstrap {
+	margin: auto;
+	width: 400px;
+	background-color: black;
+}
+.navbar-background {
+	background-color: black;
 }
 
 .button--green {
