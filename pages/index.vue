@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<div class="container">
-			<h1>home</h1>
+			<h1>Sotware Developer</h1>
 		</div>
 		<div class="container">
 			<h1>
