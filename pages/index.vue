@@ -23,16 +23,6 @@ export default {};
 </script>
 
 <style>
-.container {
-	margin: 0 auto;
-	margin-top: 1rem;
-	min-height: 10vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-
 .title {
 	font-family: 'Quicksand', 'Source Sans Pro', -apple-system,
 		BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,

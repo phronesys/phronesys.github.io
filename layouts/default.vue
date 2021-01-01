@@ -16,7 +16,15 @@ html {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
 }
-
+.container {
+	margin: 0 auto;
+	margin-top: 1rem;
+	min-height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
 *,
 *::before,
 *::after {
