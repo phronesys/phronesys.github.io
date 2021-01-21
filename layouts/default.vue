@@ -1,25 +1,67 @@
 <template>
   <div>
-    <div class="navbar-background">
-      <div class="bootstrap">
-        <nav class="navbar navbar-expand-lg navbar-light bg-black">
-          <div class="container">
-            <nuxt-link to="/" class="button--grey">home</nuxt-link>
-            <nuxt-link to="/projects" class="button--green">projects</nuxt-link>
-            <nuxt-link to="/about" class="button--green">about</nuxt-link>
-          </div>
-        </nav>
-      </div>
-    </div>
+    <nav class="navbar">
+      <!-- change button class if i'm in that place -->
+      <h1 id="header-title">Front End Developer</h1>
+      <ul>
+        <li>
+          <nuxt-link to="/" :class="isHome ? 'button--green' : 'button--grey'">
+            home
+          </nuxt-link>
+        </li>
+        <li>
+          <nuxt-link
+            to="/contact"
+            :class="isContact ? 'button--green' : 'button--grey'"
+            >contact</nuxt-link
+          >
+        </li>
+      </ul>
+    </nav>
     <Nuxt />
   </div>
 </template>
+<script>
+export default {
+  data() {
+    return {
+      isHome: false,
+      isContact: false,
+    };
+  },
+  created() {
+    if (this.$route.name === "contact") {
+      this.isHome = false;
+      this.isContact = true;
+    }
+    if (this.$route.name === "index") {
+      this.isHome = true;
+      this.isContact = false;
+    }
+  },
+  methods: {},
+  watch: {
+    $route(to, from) {
+      console.log(this.$route.name);
+      if (this.$route.name === "index") {
+        this.isHome = true;
+      } else {
+        this.isHome = false;
+      }
+      if (this.$route.name === "contact") {
+        this.isContact = true;
+      } else {
+        this.isContact = false;
+      }
+    },
+  },
+};
+</script>
 
 <style>
 html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -27,41 +69,36 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-.container {
-  margin: 0 auto;
-  margin-top: 1rem;
-  min-height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0;
 }
-.bootstrap {
-  margin: auto;
-  width: 400px;
-  background-color: black;
-}
 .navbar {
-  padding: 0rem;
-  margin: 0rem;
-}
-.navbar-background {
+  width: 100%;
+  padding: 1rem;
+  margin: auto;
   background-color: black;
 }
-
+li {
+  list-style: none;
+  display: inline-block;
+  padding: 0.7rem;
+}
+#header-title {
+  display: inline;
+  color: azure;
+  padding: 1rem 3rem;
+  text-align: center;
+}
 .button--green {
   display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
+  border-radius: 4rem;
+  border: 0.1rem solid #3b8070;
   color: #3b8070;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 1rem 3rem;
 }
 
 .button--green:hover {
@@ -71,12 +108,11 @@ html {
 
 .button--grey {
   display: inline-block;
-  border-radius: 4px;
+  border-radius: 4rem;
   border: 1px solid #35495e;
   color: #35495e;
   text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+  padding: 1rem 3rem;
 }
 
 .button--grey:hover {

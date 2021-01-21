@@ -1,53 +1,46 @@
 <template>
   <div>
-    <div class="container">
-      <h1>Sotware Developer</h1>
+    <div class="about">
+      <h2>Whoami</h2>
+      <div class="about--text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim et
+          voluptate vitae ratione possimus tenetur ipsa cum temporibus delectus
+          doloribus dolorem illo, quae porro blanditiis modi quasi? Alias, ab
+          minus?
+        </p>
+      </div>
     </div>
-    <div class="container">
-      <h1>
-        <nuxt-link to="/projects" class="button--green">projects</nuxt-link>
-      </h1>
-    </div>
-    <div class="container">
-      <h1>
-        <nuxt-link to="/about" class="button--green">about</nuxt-link>
-      </h1>
-    </div>
-    <div class="container">
-      <logo></logo>
+    <div class="projects">
+      <h2>projects</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum,
+        magnam ex quod repudiandae dolores illo totam, vel soluta at pariatur
+        nulla cupiditate qui error eius asperiores ipsum harum eaque aliquid.
+      </p>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from "../components/Logo";
-export default {
-  components: {
-    Logo,
-  },
-};
+export default {};
 </script>
 
-<style>
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+<style scoped>
+.about {
+  position: relative;
+  top: 2rem;
+  left: 50%;
+  transform:  translateX(-50%);
+  max-width: 40rem;
+  box-shadow: rgba(0, 0, 0, 0.8);
+  border:2px solid #3b8070;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: .5rem;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
+.projects {
+  position: relative;
+  top: 3rem;
 }
 </style>
