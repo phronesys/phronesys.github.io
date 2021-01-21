@@ -41,6 +41,7 @@ export default {};
 }
 .projects {
   position: relative;
+  max-width: 80vw;
   top: 3rem;
 }
 </style>
