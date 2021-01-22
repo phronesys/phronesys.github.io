@@ -4,12 +4,12 @@
       <!-- change button class if i'm in that place -->
       <h1 id="header-title">Front End Developer</h1>
       <ul>
-        <li>
+        <li class="button">
           <nuxt-link to="/" :class="isHome ? 'button--green' : 'button--grey'">
             home
           </nuxt-link>
         </li>
-        <li>
+        <li class="button">
           <nuxt-link
             to="/contact"
             :class="isContact ? 'button--green' : 'button--grey'"
@@ -81,7 +81,7 @@ html {
   margin: auto;
   background-color: black;
 }
-li {
+.button {
   list-style: none;
   display: inline-block;
   padding: 0.7rem;
@@ -92,29 +92,34 @@ li {
   padding: 1rem 3rem;
   text-align: center;
 }
+#header-title:hover {
+  color: #fff;
+  /* background: #3b8070; */
+  transition-delay: .1s;
+  color: #3b8079;
+  transform: scale(1.1);
+}
 .button--green {
-  display: inline-block;
-  border-radius: 4rem;
   border: 0.1rem solid #3b8070;
   color: #3b8070;
+  display: inline-block;
+  border-radius: 4rem;
   text-decoration: none;
   padding: 1rem 3rem;
 }
-
 .button--green:hover {
   color: #fff;
   background-color: #3b8070;
 }
 
 .button--grey {
-  display: inline-block;
-  border-radius: 4rem;
   border: 1px solid #35495e;
   color: #35495e;
+  display: inline-block;
+  border-radius: 4rem;
   text-decoration: none;
   padding: 1rem 3rem;
 }
-
 .button--grey:hover {
   color: #fff;
   background-color: #35495e;
