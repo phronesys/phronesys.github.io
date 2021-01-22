@@ -2,7 +2,7 @@
   <div>
     <div class="container">
       <h1>contact</h1>
-      <a href="https://github.com/phronesys" target="_blank">Github</a>
+      <a href="https://github.com/phronesys" target="_blank" class="button--green">Github</a>
     </div>
   </div>
 </template>

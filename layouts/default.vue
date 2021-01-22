@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar">
       <!-- change button class if i'm in that place -->
-      <h1 id="header-title">Front End Developer</h1>
+      <h1 id="header-title">Full Stack Developer</h1>
       <ul>
         <li class="button">
           <nuxt-link to="/" :class="isHome ? 'button--green' : 'button--grey'">
@@ -84,7 +84,7 @@ html {
 .button {
   list-style: none;
   display: inline-block;
-  padding: 0.7rem;
+  padding: 0.4rem;
 }
 #header-title {
   display: inline;
@@ -100,12 +100,12 @@ html {
   transform: scale(1.1);
 }
 .button--green {
-  border: 0.1rem solid #3b8070;
+  border: 0.2rem solid #3b8070;
   color: #3b8070;
   display: inline-block;
   border-radius: 4rem;
   text-decoration: none;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
 }
 .button--green:hover {
   color: #fff;
@@ -113,12 +113,12 @@ html {
 }
 
 .button--grey {
-  border: 1px solid #35495e;
+  border: .2rem solid #35495e;
   color: #35495e;
   display: inline-block;
   border-radius: 4rem;
   text-decoration: none;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
 }
 .button--grey:hover {
   color: #fff;
