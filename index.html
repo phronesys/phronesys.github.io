@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/all.css" /> -->
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link rel="shortcut icon" type="image/png" href="img/dlogo.ico" />
+
+    <title>Daniel Dazarola</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./img/dlogo.ico" alt="Logo" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">Daniel Dazarola</span>
+          <span class="heading-primary--sub">Desarrollador web</span>
+        </h1>
+        <a href="#projects" class="btn btn--black btn--animated"
+          >Ver Proyectos</a
+        >
+      </div>
+    </header>
+    <main>
+      <section class="section-about">
+        <!-- utility class -->
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">
+            Enfocado en la creación de aplicaciones web
+          </h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Aprendo en cada desafío
+            </h3>
+            <p class="paragraph">
+              Estoy en busca de un equipo que me saque de mi zona de confort. Mi
+              estudio ha consistido principalmente en Vue, Sass y Node
+              consumiendo API's, y estaré encantado de aprender nuevas
+              tecnologías.
+            </p>
+          </div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/vuelogo.png"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/nodelogo.png"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/sasslogo.png"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-features">
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-vuejs"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Front End</h3>
+              <p class="feature-box__text">Vue</p>
+              <p class="feature-box__text">CSS/Sass</p>
+              <p class="feature-box__text">HTML5</p>
+              <p class="feature-box__text">Javascript</p>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-npm"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Back end</h3>
+              <p class="feature-box__text">NodeJS</p>
+              <p class="feature-box__text">Axios/Ajax</p>
+              <p class="feature-box__text">Estructuras de Datos</p>
+              <p class="feature-box__text">Algoritmos</p>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="feature-box">
+              <i class="feature-box__icon fab fa-git-alt"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Hosting</h3>
+              <p class="feature-box__text">Git</p>
+              <p class="feature-box__text">Linux/ZSH</p>
+              <p class="feature-box__text">AWS EC2</p>
+              <p class="feature-box__text">Firebase</p>
+            </div>
+          </div>
+
+          <!-- <div class="col-1-of-4">
+            <div class="feature-box">
+              <i class="feature-box__icon icon-basic-heart"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                live a healthier life
+              </h3>
+              <p class="feature-box__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+                cum assumenda autem sapiente delectus
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      <section class="section-tours" id="projects">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">Mis proyectos</h2>
+        </div>
+        <div class="row">
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--1">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Pokemon API</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Vue</li>
+                    <li>Axios / Ajax</li>
+                    <li>Pokemon API</li>
+                    <li>NES.CSS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">
+                      Un fetch de la PokeAPI con Vue, aun faltan retoques al
+                      diseño
+                    </p>
+                  </div>
+                  <!-- <a href="#popup" target="_blank" class="btn btn--white u-margin-bottom-small">Demo</a> -->
+                  <div class="card__buttons">
+                    <a
+                      href="https://github.com/phronesys/vue-poke-api/"
+                      target="_blank"
+                      class="btn btn--black u-margin-bottom-small fab fa-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--2">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--2"
+                    >Open Weather Map API</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Vue / Node</li>
+                    <li>Scss / HTML5</li>
+                    <li>Axios / API</li>
+                    <li>Netlify</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-2">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">
+                      Obtén la temperatura de cualquier lugar del mundo, gracias
+                      a <a class="btn-text" href="">OWM API</a>
+                    </p>
+                  </div>
+                  <div class="card__buttons">
+                    <a
+                      href="https://el-sarten-caliente.netlify.app/"
+                      target="_blank"
+                      class="btn btn--white u-margin-bottom-small fas fa-play"
+                    ></a>
+                    <a
+                      href="https://github.com/phronesys/vue-open-weather"
+                      target="_blank"
+                      class="btn btn--black u-margin-bottom-small fab fa-github"
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="card">
+              <div class="card__side card__side--front">
+                <div class="card__picture card__picture--3">&nbsp;</div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--3"
+                    >En desarrollo</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>Vue / SCSS</li>
+                    <li>Ionic o Quasar (PWA)</li>
+                    <li>Firebase o Digital Ocean</li>
+                    <li>NodeJS</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__side card__side--back card__side--back-3">
+                <div class="card__cta">
+                  <div class="card__price-box">
+                    <p class="card__price-only">
+                      Desarrollando mi primera PWA con Vue...
+                    </p>
+                  </div>
+                  <div class="card__buttons">
+                    <!-- <a href="#popup" class="btn btn--black">The code</a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/dlogo.ico" alt="Full logo" class="footer__logo" />
+      </div>
+      <div class="row footer__row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="li footer__item">
+                <a
+                  href="https://github.com/phronesys"
+                  target="_blank"
+                  class="footer__link"
+                  >GitHub</a
+                >
+              </li>
+              <li class="li footer__item">
+                <a
+                  href="https://www.linkedin.com/in/daniel-dazarola-10b834202/"
+                  target="_blank"
+                  class="footer__link"
+                  >LinkedIn</a
+                >
+              </li>
+              <!-- <li class="li footer__item">
+                <a href="#" class="footer__link" download>CV</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Creado por <a href="#" class="footer__link">Daniel Dazarola</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="img 1" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="img 2" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-tours" class="popup__close">&times;</a>
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start booking now
+          </h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please read these terms before booking
+          </h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius
+            animi sapiente quisquam magnam inventore odio in asperiores, nisi,
+            qui repellat, praesentium nulla illum veritatis placeat molestiae
+            consectetur blanditiis maxime earum officia minima libero labore
+            aut! Impedit repudiandae illo commodi aperiam qui nesciunt hic
+            sequi, eum vel optio alias laudantium earum ipsam ipsum sapiente
+            eaque! Optio impedit eveniet repudiandae dolores nisi! Voluptates
+            dolores officiis quidem placeat cupiditate at dignissimos minus
+            dicta nobis et accusamus ducimus, enim numquam voluptatem autem
+            quis, illum excepturi?
+          </p>
+          <a href="#section-book" class="btn btn--green">Book now</a>
+        </div>
+      </div>
+    </div> -->
+
+    <!--
+	<section class="grid-test">
+		<div class="row">
+			<div class="col-1-of-2">Col 1 of 2</div>
+			<div class="col-1-of-2">Col 1 of 2</div>
+    </div>
+    
+		<div class="row">
+			<div class="col-1-of-3">Col 1 of 3</div>
+			<div class="col-1-of-3">Col 1 of 3</div>
+			<div class="col-1-of-3">Col 1 of 3</div>
+    </div>
+    
+		<div class="row">
+			<div class="col-1-of-3">Col 1 of 3</div>
+			<div class="col-2-of-3">Col 2 of 3</div>
+    </div>
+
+		<div class="row">
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-1-of-4">Col 1 of 4</div>
+    </div>
+    
+		<div class="row">
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-2-of-4">Col 2 of 4</div>
+    </div>
+    
+		<div class="row">
+			<div class="col-1-of-4">Col 1 of 4</div>
+			<div class="col-3-of-4">Col 3 of 4</div>
+		</div>
+	</section> 
+	-->
+  </body>
+</html>
