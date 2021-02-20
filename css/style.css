@@ -356,6 +356,8 @@ body {
       background-image: linear-gradient(to right bottom, #f72585, #7209b7), url(../img/openweather.gif); }
     .card__picture--3 {
       background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/onbuild.gif); }
+    .card__picture--4 {
+      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/simple-crud.v3.gif); }
   .card__heading {
     position: absolute;
     top: 2rem;
