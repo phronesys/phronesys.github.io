@@ -1,3 +1,7 @@
 # Protfolio
 
-### Thanks to [Jonas Schmedtmann](https://github.com/jonasschmedtmann) and his Udemy course project which this portfolio is based on
+### Built with 
+SCSS 
+
+### Based on
+[Jonas Schmedtmann udemy course](https://www.udemy.com/course/advanced-css-and-sass/)
